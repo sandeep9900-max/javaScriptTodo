@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="main-div">
+      <h2>Contact List</h2>
+      <button id="modal-btn">Add Contact<i class="fa fa-plus icon"></i></button>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="container">
+            <form action="/action_page.php">
+              <h2 id="header">Add Contact</h2>
+              <div class="label">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Your first name.."
+                />
+              </div>
+              <div class="label">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Your last name.."
+                />
+              </div>
+
+              <div class="label">
+                <label for="country">Contact-Number</label>
+              </div>
+
+              <div class="input">
+                <input
+                  type="text"
+                  id="task"
+                  name="task"
+                  placeholder="Enter Your Contact-Number.."
+                />
+              </div>
+
+              <button
+                type="button"
+                class="button Submit-Update-button"
+                onclick="addArray()"
+                data-toggle="collapse"
+                data-target="#demo"
+                style="opacity: 0.5"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <table id="demo" class="table table-light">
+
+        </table>
+      </div>
+    </div>
+
+    <script src="localtodo.js">
+     
+    </script>
+  </body>
+</html>

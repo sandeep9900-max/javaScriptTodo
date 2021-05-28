@@ -1,0 +1,120 @@
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#modal-btn {
+  border-radius: 28px;
+  height: 47px;
+  width: 156px;
+  font-size: 16px;
+  font-variant-caps: petite-caps;
+  border: 0px solid;
+  padding: 10px;
+  box-shadow: 1px 7px #888888;
+  float: right;
+  margin-top: -60px;
+}
+.main-div {
+  padding: 30px 150px 30px 150px;
+}
+.icon {
+  padding: 7px;
+}
+
+.container {
+  /* border-radius: 5px;
+    background-color: #f2f2f2; */
+  padding: 20px;
+}
+#fname {
+  width: inherit;
+  height: 32px;
+}
+#lname {
+  width: inherit;
+  height: 32px;
+}
+#task {
+  width: inherit;
+  height: 32px;
+}
+.input {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.label {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  width: 42%;
+  height: 258px;
+  border-radius: 40px;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.close-btn {
+  float: right;
+  color: lightgray;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.table {
+    justify-content: center;
+    font-family: arial, sans-serif;
+    width: 100%;
+    padding: 39px 0px 39px 0px;
+}
+
+.close-btn:hover {
+  color: darkgray;
+}
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
